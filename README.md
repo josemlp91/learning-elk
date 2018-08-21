@@ -18,7 +18,7 @@ http GET $ELASTICURL -a $ELASTICAUTH
 ![](https://pix.toile-libre.org/upload/original/1534863877.png)
 
 
-### Crear primer mapping y datos de prueba en nuestro cluster.
+## Mapping y datos de prueba en nuestro cluster.
 
 ```sh
 # Descargar mapping y dataset
@@ -32,3 +32,10 @@ http POST $ELASTICURL/shakespeare//doc/_bulk shakespeare_6.0.json -a $ELASTICAUT
 # Revisar que ya existen los datos.
 http GET $ELASTICURL/shakespeare/_search -a $ELASTICAUTH
 ```
+
+![](http://pix.toile-libre.org/upload/original/1534864392.png)
+
+
+## Instalar Kibana y primera búsqueda.
+
+![](http://pix.toile-libre.org/upload/original/1534865441.png)
